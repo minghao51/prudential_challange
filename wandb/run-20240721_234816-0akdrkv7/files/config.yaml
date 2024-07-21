@@ -1,0 +1,117 @@
+wandb_version: 1
+
+n_estimators:
+  desc: null
+  value: 5
+num_leaves:
+  desc: null
+  value: 9
+min_child_samples:
+  desc: null
+  value: 52
+learning_rate:
+  desc: null
+  value: 0.018946909050488705
+log_max_bin:
+  desc: null
+  value: 7
+colsample_bytree:
+  desc: null
+  value: 0.9318698026248824
+reg_alpha:
+  desc: null
+  value: 0.013137375807020256
+reg_lambda:
+  desc: null
+  value: 8.449943144714585
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.4
+    cli_version: 0.17.5
+    framework: lightgbm
+    is_jupyter_run: true
+    is_kaggle_kernel: true
+    start_time: 1721576896
+    t:
+      1:
+      - 5
+      - 6
+      - 8
+      - 53
+      - 55
+      2:
+      - 5
+      - 6
+      - 8
+      - 53
+      - 55
+      3:
+      - 2
+      - 7
+      - 16
+      - 23
+      - 25
+      - 26
+      - 62
+      - 63
+      4: 3.12.4
+      5: 0.17.5
+      8:
+      - 1
+      - 2
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: validation_l2
+      6:
+      - 3
+      7:
+      - 1
+    - 1: validation_multi_logloss
+      6:
+      - 3
+      7:
+      - 1
+    visualize:
+      Feature Importance:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/bar/v0
+          fieldSettings:
+            label: Feature
+            value: Importance
+          stringSettings:
+            title: Feature Importance
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: Feature Importance_table
+                fields: []
+objective:
+  desc: null
+  value: multiclass
+num_iterations:
+  desc: null
+  value: 30
+num_class:
+  desc: null
+  value: 6
+metric:
+  desc: null
+  value: multi_logloss

@@ -1,0 +1,29 @@
+#pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+openai
+numpy
+pandas
+llama-index==0.10.26
+llama-index-llms-groq
+llama-index-readers-web
+llama-index-retrievers-bm25
+llama-index-postprocessor-flag-embedding-reranker
+FlagEmbedding
+trafilatura==1.8.0
+lxml_html_clean==0.1.0 # trafilatura
+llama-parse
+sentence-transformers==2.6.1 #Re-Ranker
+transformers[torch,sentencepiece]==4.39.2
+python-dotenv
+ipykernel
+ipywidgets
+huggingface_hub==0.20.3
+spacy==3.7.4 # evalution
+fastapi
+uvicorn[standard]
+
+# haystack-ai
+# google-ai-haystack
+# streamlit
+# datasets
+# reranker-package @ git+https://github.com/owner/repo@main
+

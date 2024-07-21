@@ -1,0 +1,32 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.4
+    cli_version: 0.17.5
+    framework: lightgbm
+    is_jupyter_run: true
+    is_kaggle_kernel: true
+    start_time: 1721586801
+    t:
+      1:
+      - 5
+      - 8
+      - 53
+      - 55
+      2:
+      - 5
+      - 8
+      - 53
+      - 55
+      3:
+      - 2
+      - 23
+      4: 3.12.4
+      5: 0.17.5
+      8:
+      - 1
+      - 2
+      - 5
+      13: linux-x86_64

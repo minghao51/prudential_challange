@@ -1,0 +1,121 @@
+{
+    "os": "Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-07-21T18:30:18.338950",
+    "startedAt": "2024-07-21T18:30:12.551179",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "host": "howt",
+    "username": "howt",
+    "executable": "/home/howt/mambaforge/envs/py312syndata/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3193.9239999999995,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.924,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 221.5363998413086
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.549156188964844
+    }
+}
