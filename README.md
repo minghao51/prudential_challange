@@ -18,9 +18,8 @@ Synthetic data via real data. Althrough through DataLLM we could also create it 
 
 `pip install -U datallm`
 
-3. [Gretel.AI](https://console.gretel.ai/dashboard)
-
-Its Interface for prompt engineeing a synthetic data is used to use compare with that of Mostly.AI, there isn't any means for calling them via code, and that asking it to generate over 1K records seems to just cause it be unresponsive.
+Require API key, which can be acquired from [website](https://data.mostly.ai/docs/routes#authentication)
+Please also save it on the 
 
 # Other Potential Sources for real data (non prioritory)
 3. Kaggle
