@@ -5,6 +5,16 @@
 
 The implementations can be found in the notebooks, with the Input and Output resides in the data folder. All these are commited into the Git Repo.
 
+
+# Enviroment
+
+Ideally, with conda/mamba, via local environment
+
+`mamba env create -n py312syndata --file env.yml`
+
+whereby all, all the notebooks will just execute using the created environment.
+Alternatively, you can create an environment with the relevant libaries as well (refer to the libraries section)
+
 # Notebooks
 
 ## 1. **L0_DataScope.ipnyb**
@@ -40,6 +50,7 @@ The implementations can be found in the notebooks, with the Input and Output res
     - Premodel processing
         - Casting/Train Val Seperation
     - LightGBM Model
+        - Required API KEY for [wandb](https://wandb.ai/home), although, the relevant codes can be disabled as it is just there for logging purpose
 
 ## 4. **L3_Validation.ipnyb**
 **Evaluate the models**
@@ -50,13 +61,11 @@ The implementations can be found in the notebooks, with the Input and Output res
         - FairLearn
 
 
-# Enviroment
-`mamba create -n env_name packages_in_env.yml -c channels_in_env.yml`
 
 # Libraries Used
 - python=3.12
 - SDV
-- datallm
+- datallm (pip install)
 - pandas
 - numpy
 - polars
