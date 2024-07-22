@@ -74,3 +74,6 @@ Alternatively, you can create an environment with the relevant libaries as well 
 - fairlearn
 
 
+# Clean up/Uninstall Env
+Once you are done, the environment can be removed via 
+`mamba env remove -n py312syndata`
