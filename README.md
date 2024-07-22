@@ -15,7 +15,7 @@ Alternatively, you can create an environment with the relevant libraries as well
 
 # Notebooks
 
-## 1. **L0_DataScope.ipnyb**
+## 1. **L0_DataScope**
 **Hybrid Data Generation**
 1. Rules and stats-based generation
     - Single wide table with Customer/policies/payment etc
@@ -27,7 +27,7 @@ Alternatively, you can create an environment with the relevant libraries as well
     - Issue/Termination Date
     - Fraction(termination Date) to None
 
-## 2. **L1_DataGeneration.ipnyb**
+## 2. **L1_DataGeneration**
 **Generating cross-sell & upsell data with SVD**
 - Select customers of certain profiles - high value (premium/income) / dependencies/ recency, and use rules/assumptions to appoint them to purchase additional policies
     1. GaussianCopulaSynthesizer
@@ -36,7 +36,7 @@ Alternatively, you can create an environment with the relevant libraries as well
     4. Additional into Tables
 - Aim to get like 20% of the customers with either upsell/sell
 
-## 3. **L2_MLApproach.ipnyb**
+## 3. **L2_MLApproach**
 **ML-based Approach**
 - Feature Eng
     - Event Base Feature Engineering
@@ -49,7 +49,7 @@ Alternatively, you can create an environment with the relevant libraries as well
         - Required API KEY for [wandb](https://wandb.ai/home), although, the relevant codes can be disabled as it is just there for logging purpose
         - However, since wandb logging is embeded within the logics, it is best to grab/register an account and insert the API key via the jupyter interface
 
-## 4. **L3_Validation.ipnyb**
+## 4. **L3_Validation**
 **Evaluate the models**
 - Performance metrics
     - WandB Logging - Metrics, Artifacts (Table, Model.pkl, plots)
