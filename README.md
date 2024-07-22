@@ -20,45 +20,44 @@ Alternatively, you can create an environment with the relevant libaries as well 
 ## 1. **L0_DataScope.ipnyb**
 **Hybrid Data Generation**
 1. Rules and stats-based generation
-    - Single wide table with Customer/policies/payment etc
+    - Single wide table with Customer/policies/payment etc
 2. DataLLM - MostlyAI augmentation
-    - Augmentation with prompts
-    - Required API KEY
-        - Acquire from [website](https://data.mostly.ai/docs/routes#authentication), and save it to .env
+    - Augmentation with prompts
+    - Required API KEY, [MostlyAI](https://data.mostly.ai/docs/routes#authentication), and save it to .env as
 3. Manually Clean Up
-    - Date casting
-    - Issue/Termination Date
-    - Fraction(termination Date) to None
+    - Date casting
+    - Issue/Termination Date
+    - Fraction(termination Date) to None
 
 ## 2. **L1_DataGeneration.ipnyb**
 **Generating cross-sell & upsell data with SVD**
 - Select customers of certain profiles - high value (premium/income) / dependencies/ recency, and use rules/assumptions to appoint them to purchase additional policies
-    1. GaussianCopulaSynthesizer
-    2. Constraint
-    3. Conditional Generation
-    4. Additional into Tables
+    1. GaussianCopulaSynthesizer
+    2. Constraint
+    3. Conditional Generation
+    4. Additional into Tables
 - Aim to get like 20% of the customers with either upsell/sell
 
 ## 3. **L2_MLApproach.ipnyb**
 **ML-based Approach**
-- Feature Eng 
-    - Event Base Feature Engineering
-    - Capture only Cross-sell/Upsell Policy Purchase Events
-        - Single Purchase events are discarded in this modeling, although it is possible to make use of them to extract demography favorable for certain policies at times.
+- Feature Eng
+    - Event Base Feature Engineering
+    - Capture only Cross-sell/Upsell Policy Purchase Events
+        - Single Purchase events are discarded in this modeling, although it is possible to make use of them to extract demography favorable for certain policies at times.
 - ML Training
-    - Premodel processing
-        - Casting/Train Val Separation
-    - LightGBM Model
-        - Required API KEY for [wandb](https://wandb.ai/home), although, the relevant codes can be disabled as it is just there for logging purposes
+        - Premodel processing
+        - Casting/Train Val Separation
+    - LightGBM Model
+        - Required API KEY for [wandb](https://wandb.ai/home), although, the relevant codes can be disabled as it is just there for logging purpose
 
 ## 4. **L3_Validation.ipnyb**
 **Evaluate the models**
-    - Performance metrics
-        - WandB Logging - Metrics, Artifacts (Table, Model.pkl, plots)
-        - Multi-Classification Metrics Logging
-        - SHAP for the encoded class to investigate the customer purchase behavior
-    - AI ethics
-        - FairLearn
+- Performance metrics
+    - WandB Logging - Metrics, Artifacts (Table, Model.pkl, plots)
+    - Multi-Classification Metrics Logging
+    - SHAP for the encoded class to investigate the customer purchase behavior
+- AI ethics
+    - FairLearn
 
 
 
