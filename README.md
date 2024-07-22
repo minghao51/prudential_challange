@@ -49,6 +49,7 @@ Alternatively, you can create an environment with the relevant libaries as well 
         - Casting/Train Val Separation
     - LightGBM Model
         - Required API KEY for [wandb](https://wandb.ai/home), although, the relevant codes can be disabled as it is just there for logging purpose
+        - However, since wandb logging is embeded within the logics, it is best to grab/register an account and insert the API key via the jupyter interface
 
 ## 4. **L3_Validation.ipnyb**
 **Evaluate the models**
@@ -73,6 +74,14 @@ Alternatively, you can create an environment with the relevant libaries as well 
 - lightgbm
 - fairlearn
 
+
+# .env file
+The API keys necessary for accessing DataLLM and Weights & Biases (wandb) are, by default, retrieved from a .env file, which is not committed to the version control system and requires manual creation. The .env file follows a specific format, which is
+
+```
+DataLLM=<your_api_key_here>
+WANDB=<your_api_key_here>
+```
 
 # Clean up/Uninstall Env
 Once you are done, the environment can be removed via 
