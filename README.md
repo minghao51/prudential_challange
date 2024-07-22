@@ -1,10 +1,8 @@
-
-
 # AI Use Cases
-> 2. Implement a product recommendation model for either cross or upselling from customer behavious
+> 2. Implement a product recommendation model for either cross or upselling from customer behaviors
 
-- The implementations details fo the various steps can be found in the notebooks
-- The Input and Output resides in the data folder
+- The implementation details for the various steps can be found in the notebooks
+- The Input and Output reside in the data folder
 
 # Enviroment
 
@@ -13,7 +11,7 @@ Ideally, with conda/mamba, via local environment
 `mamba env create -n py312syndata --file env.yml`
 
 Whereby, all the notebooks will be executed using the created environment.
-Alternatively, you can create an environment with the relevant libaries as well (refer to the libraries section, or use notebook kernel + pip install)
+Alternatively, you can create an environment with the relevant libraries as well (refer to the libraries section or use notebook kernel + pip install)
 
 # Notebooks
 
@@ -84,5 +82,6 @@ WANDB=<your_api_key_here>
 ```
 
 # Clean up/Uninstall Env
-Once you are done, the environment can be removed via 
+Once you are done, the environment can be removed via
+
 `mamba env remove -n py312syndata`
